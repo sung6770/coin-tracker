@@ -95,7 +95,7 @@ function App() {
     fetch("https://api.coinpaprika.com/v1/global")
       .then((response) => response.json())
       .then((json) => setMarket(json));
-    fetch("https://api.coinpaprika.com/v1/tickers?limit=20")
+    fetch("https://api.coinpaprika.com/v1/tickers")
       .then((response) => response.json())
       .then((json) => setCoins(json));
     setLoading(false);
